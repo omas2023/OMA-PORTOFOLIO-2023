@@ -35,14 +35,14 @@
   font-size: x-small;
   margin-left: 9%;
   margin-right: 9%;
-  color: rgb(89, 89, 93);
+  color: rgb(208, 208, 215);
   /* background-image: url("/img/wood.jpg");opacity: .7; */
 
   border-color: rgb(215, 128, 13);
   bottom: 6%;
   top: 4%;
   padding: 4%;
-  box-shadow: rgba(69, 35, 105, 0.799) 30px 10px 80px 4px;
+  box-shadow: rgba(192, 186, 197, 0.799) 30px 10px 30px 4px;
 }
 /* div:hover {
   width: 100px;
@@ -221,7 +221,7 @@ img {
   margin-top: 9%;
   vertical-align: right;
   margin-left: 12%;
-  box-shadow: rgb(156, 151, 151) 50px 28px 20px;
+  box-shadow: rgba(75, 53, 53, 0.694) 50px 0px 29px;
 }
 
 /* Slideshow container */
@@ -320,4 +320,236 @@ Fading animation .fade {
   .text {
     font-size: 10px;
   }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 22px;
+  background-color: black;
+  margin-bottom: -20%;
+  margin-top: -10%;
+  margin-left: -40%;
+}
+
+@keyframes example {
+  0% {
+    background-color: red;
+    left: 50px;
+    top: 0px;
+  }
+  25% {
+    background-color: rgba(255, 255, 0, 0);
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: rgb(17, 1, 16);
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: rgb(61, 3, 6);
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: rgba(133, 122, 1, 0.799);
+    left: 0px;
+    top: 0px;
+  }
+}
+.container2:hover {
+  animation: shake 0.5s;
+  /* animation-iteration-count: infinite; */
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+.container2 {
+  position: absolute;
+  bottom: 30px;
+  background: rgb(5, 0, 9);
+  width: 370px;
+  height: 370px;
+  border-radius: 50%;
+  box-shadow: rgb(37, 1, 37) 10px 30px 4px 5px;
+  animation-name: example;
+  animation-duration: 8s;
+  animation-delay: -2s;
+}
+.container {
+  /* position: relative; the planet*/
+  max-width: 1100px;
+  /* margin: 2 auto; */
+  margin-bottom: 20%;
+  margin-left: 20%;
+  }
+
+  .container img {
+    vertical-align: middle;
+}
+
+.container .content {
+  position: absolute;
+  bottom: 10;
+  background: rgb(223, 0, 0); /* Fallback color */
+  background: rgba(52, 11, 66, 0.336); /* Black background with 0.5 opacity */
+  color: #f6f5f5;
+  width: 650px;
+  height: 650px;
+  margin-top: -60%;
+  border-radius: 50%;
+  margin-left: 30%;
+  justify-items: center;
+  text-align: center;
+  box-shadow: rgb(20, 4, 28) 20px 30px 40px 5px;
+  position: relative;
+}
+
+.bod2 {
+  background-color: #100e17;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container6 {
+  position: absolute;
+  height: 300px;
+  width: 600px;
+  top: 60px;
+  left: calc(50% - 300px);
+  display: flex;
+}
+
+.card {
+  display: flex;
+  height: 150px;
+  width: 150px;
+  background-color: #200335d5;
+  /* border-radius: 1px; */
+  box-shadow: -1rem 0 1rem rgba(216, 227, 8, 0.299);
+  /*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 10px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.card:not(:first-child) {
+  margin-left: 40px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: rgb(236, 234, 234);
+  font-weight: 200;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 10px;
+  width: 110px;
+}
+
+.emptybar {
+  background-color: #4e6a9579;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0, 154, 217);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 154, 217, 1) 0%,
+    rgba(217, 147, 0, 1) 65%,
+    rgba(255, 186, 0, 1) 100%
+  );
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  /* position: absolute; */
+  top: 90px;
+  left: calc(40% - 60px);
+}
+
+.stroke {
+  stroke: rgb(39, 4, 115);
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #4b07d301;
+  stroke-width: 2px;
+}
+
+.card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+@media (min-width: 760px) {
 }
