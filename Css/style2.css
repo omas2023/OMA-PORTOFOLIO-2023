@@ -81,25 +81,26 @@ body {
   font-size: large;
   text-decoration: underline;
   text-shadow: rgba(20, 20, 1, 0.888) 7px 9px 6px;
-  box-shadow: rgba(44, 2, 151, 0.464) 88px 100px 100px 60px;
+  box-shadow: rgba(63, 2, 219, 0.464) 88px 100px 100px 60px;
 }
+/* background img */
 img {
-  border-radius: 5%;
+  border-radius: 50%;
   background-position: center;
   margin: 1%;
   padding: 1%;
-  box-shadow: 40px 30px 30px 20px rgba(53, 53, 3, 0.765);
+  box-shadow: 40px 30px 30px 20px rgba(0, 0, 0, 0.911);
   padding-top: 1%;
   padding-left: 1%;
   padding-right: 1%;
   padding-bottom: 1%;
-  /* height: 200px;
-    width: 200px; */
-  /* background-color: rgba(168, 214, 0, 0.425); */
+  /* height: 200px; 
+     width: 200px;  */
+  background-color: rgba(198, 252, 0, 0);
   background-image: conic-gradient(
-    rgba(142, 3, 193, 0.751) 45deg,
-    rgba(88, 137, 8, 0.413) 90deg,
-    rgba(56, 79, 137, 0.523) 210deg
+    rgba(85, 2, 116, 0.751) 45deg,
+    rgba(87, 137, 8, 0.771) 90deg,
+    rgba(9, 49, 149, 0.523) 210deg
   );
 }
 
@@ -126,21 +127,19 @@ img {
   line-height: 1;
 }
 
-.container-oma {
-  /* position: absolute; */
-  /* width: 2px; */
-  /* height: 4px; */
-  /* margin: 70px auto 0 auto; */
-  /* padding-left: 10%; */
-  /* perspective: 1000px; */
-  /* margin-bottom: -20%; */
-  /* margin: 7; */
-  /* text-align: center; */
-  color: #a39191;
-  /* padding-bottom: 10%; */
-  /* text-align: right; */
-  /* padding-top: -10%; */
-}
+/* position: absolute; */
+/* width: 2px; */
+/* height: 4px; */
+/* margin: 70px auto 0 auto; */
+/* padding-left: 10%; */
+/* perspective: 1000px; */
+/* margin-bottom: -20%; */
+/* margin: 7; */
+/* text-align: center; */
+/* color: #a39191; */
+/* padding-bottom: 10%; */
+/* text-align: right; */
+/* padding-top: -10%; */
 
 .carousel {
   position: absolute;
@@ -401,17 +400,34 @@ body {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+.container9 {
+  width: 100px;
+  height: 100px;
+  /* /* padding-left: 1%; */
+  padding-right: 0%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  /* border-radius: 50%;
+  box-shadow: #e3e30f 30px 25px 40px 10px;
+animation-duration: 8s;
+  animation-delay: -2s;
+  padding-left: 0%;
+padding-bottom: 0%; */
+}
 .container2 {
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   background: rgb(5, 0, 9);
-  width: 370px;
-  height: 370px;
+  width: 310px;
+  height: 320px;
   border-radius: 50%;
   box-shadow: rgb(37, 1, 37) 10px 30px 4px 5px;
   animation-name: example;
-  animation-duration: 8s;
-  animation-delay: -2s;
+
+  border-radius: 50%;
+  box-shadow: #c4bd003c 30px 25px 40px 10px;
+  padding-right: 1%;
+  padding-top: 1%;
 }
 .container {
   /* position: relative; the planet*/
@@ -419,27 +435,29 @@ body {
   /* margin: 2 auto; */
   margin-bottom: 20%;
   margin-left: 20%;
-  }
+}
 
-  .container img {
-    vertical-align: middle;
+.container img {
+  vertical-align: middle;
 }
 
 .container .content {
-  position: absolute;
+  /* position: absolute; */
   bottom: 10;
   background: rgb(223, 0, 0); /* Fallback color */
-  background: rgba(52, 11, 66, 0.336); /* Black background with 0.5 opacity */
+  background: rgba(102, 0, 135, 0.336); /* Black background with 0.5 opacity */
   color: #f6f5f5;
-  width: 650px;
-  height: 650px;
-  margin-top: -60%;
+  width: 550px;
+  height: 550px;
+  margin-top: -110%;
   border-radius: 50%;
-  margin-left: 30%;
+  margin-left: 24%;
   justify-items: center;
   text-align: center;
   box-shadow: rgb(20, 4, 28) 20px 30px 40px 5px;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .bod2 {
@@ -530,7 +548,7 @@ body {
 }
 
 .circle {
-  /* position: absolute; */
+  /* position: relative; */
   top: 90px;
   left: calc(40% - 60px);
 }
@@ -552,4 +570,23 @@ svg {
   transition: 0.6s ease-out;
 }
 @media (min-width: 760px) {
+}
+.content {
+  text-shadow: rgb(15, 7, 7) 3px 4px 2px;
+  font-size: large;
+  margin: 0%;
+  text-decoration-line: underline;
+  color: rgb(2, 111, 109);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  opacity: initial;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  background-attachment: fixed;
+  background-size: cover;
+  margin-left: 1%;
+  margin-top: 1%;
 }
